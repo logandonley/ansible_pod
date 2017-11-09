@@ -1,0 +1,3 @@
+To use this pod, either login to the pod via the terminal in the GUI or use `oc rsh <pod-name>`.
+
+Everything in this pod is ephemeral, so if it is redeployed, everything inside will be gone forever.

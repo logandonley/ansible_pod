@@ -4,8 +4,10 @@ RUN yum install git -y
 
 WORKDIR /home/ansible
 
+COPY instructions.txt /home/ansible/
+
 RUN chown -R 1001:1001 /home/ansible
 
 USER 1001
 
-ENTRYPOINT tail -f /etc/*release
+ENTRYPOINT tail -f /home/ansible/instructions.txt
