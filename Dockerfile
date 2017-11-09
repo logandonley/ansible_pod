@@ -8,6 +8,8 @@ COPY instructions.txt /home/ansible/
 
 RUN chown -R 1001:1001 /home/ansible
 
+RUN chmod -R 755 /home/ansible
+
 USER 1001
 
 ENTRYPOINT tail -f /home/ansible/instructions.txt
