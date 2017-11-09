@@ -6,10 +6,10 @@ WORKDIR /home/ansible
 
 COPY instructions.txt /home/ansible/
 
-RUN chown -R 1001:root /home/ansible
+#RUN chown -R 1001:root /home/ansible
 
-RUN chmod -R 755 /home/ansible
+#RUN chmod -R 755 /home/ansible
 
-USER 1001
+#USER 1001
 
 ENTRYPOINT tail -f /home/ansible/instructions.txt
