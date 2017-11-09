@@ -6,7 +6,7 @@ WORKDIR /home/ansible
 
 COPY instructions.txt /home/ansible/
 
-RUN chown -R 1001:1001 /home/ansible
+RUN chown -R 1001:root /home/ansible
 
 RUN chmod -R 755 /home/ansible
 
